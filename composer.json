@@ -11,10 +11,10 @@
         "symfony/dotenv": "8.0.*",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "8.0.*",
+        "symfony/http-client": "8.0.*",
         "symfony/runtime": "8.0.*",
-        "symfony/yaml": "8.0.*"
-    },
-    "require-dev": {
+        "symfony/yaml": "8.0.*",
+        "tinify/tinify": "^1.6"
     },
     "config": {
         "allow-plugins": {

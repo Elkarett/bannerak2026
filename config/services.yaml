@@ -21,3 +21,31 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    App\Command\DownloadUrlsCommand:
+        arguments:
+            $projectDir: '%kernel.project_dir%'
+
+    App\Command\ExtractBannerCommand:
+        arguments:
+            $projectDir: '%kernel.project_dir%'
+
+    App\Command\FixImagePathsCommand:
+        arguments:
+            $projectDir: '%kernel.project_dir%'
+
+    App\Command\MinifyHtmlCommand:
+        arguments:
+            $projectDir: '%kernel.project_dir%'
+
+    App\Command\DownloadImagesCommand:
+        arguments:
+            $projectDir: '%kernel.project_dir%'
+
+    App\Command\ZipDownloadsCommand:
+        arguments:
+            $projectDir: '%kernel.project_dir%'
+
+    App\Command\TinifyImagesCommand:
+        arguments:
+            $projectDir: '%kernel.project_dir%'
