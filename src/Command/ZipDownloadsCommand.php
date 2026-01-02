@@ -39,7 +39,7 @@ class ZipDownloadsCommand extends Command
 
         // Group files by base name (removing date and language)
         $groups = [];
-        $languages = ['-euskara', '-katalan', '-galego', '-bilingue', '-castellano', '-eu', '-es', '-en', '-fr'];
+        $languages = ['-euskara', '-katalan', '-catalan', '-galego', '-gallego', '-bilingue', '-castellano', '-eu', '-es', '-en', '-fr'];
 
         foreach ($finder as $file) {
             $filename = $file->getFilename();
