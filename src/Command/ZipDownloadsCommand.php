@@ -7,12 +7,13 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
+use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
 use ZipArchive;
 
 #[AsCommand(
     name: 'app:zip:downloads',
-    description: 'Zips the minified HTML and images into a downloadable archive.',
+    description: 'Zips the minified HTML and images into a downloadable archive, then cleans up.',
 )]
 class ZipDownloadsCommand extends Command
 {
@@ -118,6 +119,31 @@ class ZipDownloadsCommand extends Command
             $zip->close();
             $io->success("Created Grouped ZIP: " . basename($zipFilename) . " with " . count($files) . " files.");
         }
+
+        // Cleanup
+        $io->section('Cleaning up...');
+        $filesystem = new Filesystem();
+
+        // 1. Delete all HTML files in AAFF
+        $finderCleanup = new Finder();
+        // Looking for all .html files, not just _min, as requested ("html-ak")
+        $finderCleanup->files()->in($targetDir)->name('*.html')->depth(0);
+
+        if ($finderCleanup->hasResults()) {
+            foreach ($finderCleanup as $file) {
+                $filesystem->remove($file->getPathname());
+                $io->text('Deleted: ' . $file->getFilename());
+            }
+        }
+
+        // 2. Delete ero_banner directory
+        $eroBannerDir = $targetDir . '/ero_banner';
+        if ($filesystem->exists($eroBannerDir)) {
+            $filesystem->remove($eroBannerDir);
+            $io->text('Deleted directory: ero_banner');
+        }
+
+        $io->success('Cleanup completed.');
 
         return Command::SUCCESS;
     }
