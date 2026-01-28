@@ -1,0 +1,178 @@
+<style>
+/*Lineal*/
+
+.lineal-product-banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    border: 0;
+    max-width: none;
+    text-align: right;
+    position: relative;
+}
+
+.lineal-product-banner-desk {
+    display: block;
+}
+
+.lineal-product-banner-resp {
+    display: none;
+}
+
+.lineal-product-banner video {
+    display: block;
+}
+
+.lineal-product-banner img {
+    display: none;
+}
+
+.lineal-product-banner .lineal-product-banner-content {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+    border: none;
+    text-align: right;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -ms-display: flex;
+    display: flex;
+}
+
+.lineal-product-banner .lineal-product-banner-text {
+    padding: 20% 0;
+    /* lineal-product-banner */
+    padding: 10% 0;
+    /* lineal-product-new-banner */
+    -ms-display: flex;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.lineal-product-banner .lineal-product-banner-text p {
+    color: #fff;
+    padding: 0 5%;
+    font-family: 'ITCAvantGardeDemi', arial, sans-serif;
+    font-size: 5.4rem;
+    line-height: 6rem;
+    width: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+
+    .lineal-product-banner-desk {
+        display: none;
+    }
+
+    .lineal-product-banner-resp {
+        display: block;
+    }
+
+    .lineal-product-banner .lineal-product-banner-text {
+        padding: 15% 0;
+    }
+
+    .lineal-product-banner .lineal-product-banner-text p {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+
+    .lineal-product-banner video {
+        height: 100%;
+        width: auto;
+        position: absolute;
+        right: 0;
+        display: none;
+    }
+
+    .lineal-product-banner img {
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .lineal-product-banner-desk {
+        display: block;
+    }
+
+    .lineal-product-banner-resp {
+        display: none;
+    }
+
+    .lineal-product-banner {
+        width: 100%;
+        margin: 0;
+        /*min-height: 15rem;*/
+    }
+
+    .lineal-product-banner video {
+        height: 100%;
+        width: auto;
+        position: absolute;
+        right: 0;
+        display: block;
+    }
+
+    .lineal-product-banner img {
+        display: none;
+    }
+
+    .lineal-product-banner video,
+    .lineal-product-banner video {
+        right: auto;
+        left: 0;
+    }
+
+    .lineal-product-banner .lineal-product-banner-content {
+        width: 100%;
+        display: block;
+        position: relative;
+    }
+
+    .lineal-product-banner .lineal-product-banner-text {
+        padding: 20% 0 2%;
+        -ms-display: flex;
+        display: flex;
+    }
+
+    .lineal-product-banner .lineal-product-banner-text p {
+        font-family: 'ITCAvantGardeBlack', arial, sans-serif;
+        font-size: 3.2rem;
+        line-height: 4rem;
+        min-height: 8rem;
+        -ms-display: list-item;
+        display: list-item;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .lineal-product-banner .lineal-product-banner-text span {
+        -ms-display: flex;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+}
+
+/* CREATIVIDAD */
+
+.lineal-product-banner img {
+    display: block;
+}
+
+.lineal-product-banner .DEV_TYPE_MOBILE_SMALL,
+.lineal-product-banner .DEV_TYPE_MOBILE_BIG,
+.lineal-product-banner .DEV_TYPE_TABLET,
+.lineal-product-banner .DEV_TYPE_DESKTOP {
+    display: block !important;
+}
