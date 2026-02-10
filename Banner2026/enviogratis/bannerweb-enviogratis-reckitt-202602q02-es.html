@@ -12084,10 +12084,13 @@
 
               .flexible-25.bannerweb-enviogratis {
                 /* background: linear-gradient(to bottom, #F1DDD1, #E1BBA7); */
-                background-color: #F1DDD1;
+                background: #F1DDD1;
                 position: relative;
                 overflow: hidden;
                 height: 220px;
+                display: flex;
+                /* flex-direction: column; */
+                /* justify-content: center; */
               }
 
               /* Background irudia eta w-a (Testura) */
@@ -12113,8 +12116,9 @@
                 width: 58%;
                 padding-top: 20px;
                 padding-left: 25px;
-                z-index: 1;
-                position: relative;
+                border: 1px solid red;
+                /* z-index: 1;
+                position: relative; */
               }
 
               .flexible-25.bannerweb-enviogratis #izenburua {
@@ -12156,25 +12160,30 @@
               }
 
               .flexible-25.bannerweb-enviogratis #argazkia {
-                position: absolute;
-                right: 15px;
-                bottom: 15px;
-                z-index: 2;
+                width: 42%;
+                /* right: 15px;
+                bottom: 15px; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid green;
+                padding: 0 1%;
               }
 
               .flexible-25.bannerweb-enviogratis #argazkia img {
                 filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25));
+                border: 1px solid black;
                 /* border: 1px solid #252930; */
               }
 
               .flexible-25.bannerweb-enviogratis #argazkia img.mobile {
-                width: 130px;
-                float: right;
+                width: 100%;
+                /* float: right; */
               }
 
               .flexible-25.bannerweb-enviogratis #argazkia img.tablet {
                 display: none;
-                float: right;
+                /* float: right; */
               }
 
               .flexible-25.bannerweb-enviogratis p#letratxikia {
@@ -12208,6 +12217,7 @@
 
               .extend33 .flexible-25.bannerweb-enviogratis #argazkia {
                 width: 55%;
+                /* padding: 0 2%; */
               }
 
               .extend33 .flexible-25.bannerweb-enviogratis #argazkia img.mobile {
@@ -12224,16 +12234,16 @@
               .extend50 .flexible-25.bannerweb-enviogratis #edukia {
                 width: 55%;
                 padding-left: 45px;
-                padding-top: 35px;
+                padding-top: 21px;
               }
 
-              .extend50 .flexible-25.bannerweb-enviogratis #edukia br {
+              /* .extend50 .flexible-25.bannerweb-enviogratis #edukia br {
                 display: none;
-              }
+              } */
 
               .extend50 .flexible-25.bannerweb-enviogratis #izenburua {
-                font-size: 44px;
-                line-height: 100%;
+                font-size: 40px;
+                /* line-height: 100%; */
               }
 
               .extend50 .flexible-25.bannerweb-enviogratis #botoia {
@@ -12241,8 +12251,8 @@
               }
 
               .extend50 .flexible-25.bannerweb-enviogratis #argazkia {
-                right: 50px;
-                bottom: 12px;
+                width: 45%;
+                /* padding: 0 2%; */
               }
 
               .extend50 .flexible-25.bannerweb-enviogratis #argazkia img.mobile {
@@ -12251,13 +12261,13 @@
 
               .extend50 .flexible-25.bannerweb-enviogratis #argazkia img.tablet {
                 display: block;
-                width: 265px;
+                width: 100%;
               }
 
               .extend50 .flexible-25.bannerweb-enviogratis p#letratxikia {
                 font-size: 14px;
                 padding-right: 25%;
-                margin: 10px 0 5px 0;
+                margin: 7px 0 5px 0;
               }
 
               @media only screen and (max-width: 1350px) {
@@ -12293,10 +12303,10 @@
                 }
 
                 .extend33 .flexible-25.bannerweb-enviogratis #argazkia {
-                  right: 20px;
-                  bottom: 20px;
+                  /* right: 20px;
+                  bottom: 20px; */
                   width: 45%;
-                  display: block;
+                  display: flex;
                 }
 
                 /* .extend33 .flexible-25.bannerweb-enviogratis #argazkia img.mobile {
@@ -12307,6 +12317,8 @@
                   text-align: left;
                   padding: 0 0% 0 0;
                   margin: 5px 0 0 0;
+                  /* font-size: 12px; */
+                  letter-spacing: -0.95px;
                 }
 
                 /* .extend33 .flexible-25.bannerweb-enviogratis #botoia {
@@ -12324,14 +12336,15 @@
                 }
 
                 .extend50 .flexible-25.bannerweb-enviogratis #argazkia {
-                  right: 25px;
-                  bottom: 15px;
-                  display: block;
+                  /* right: 25px;
+                  bottom: 15px; */
+                  display: flex;
                   width: 40%;
+                  /* padding: 0; */
                 }
 
                 .extend50 .flexible-25.bannerweb-enviogratis #argazkia img.tablet {
-                  width: 230px;
+                  /* width: 230px; */
                 }
 
                 .extend50 .flexible-25.bannerweb-enviogratis p#letratxikia {
@@ -12353,7 +12366,7 @@
 
                 .flexible-25.bannerweb-enviogratis #edukia {
                   text-align: center;
-                  padding: 20px 0;
+                  padding: 20px 10%;
                 }
 
                 /* .flexible-25.bannerweb-enviogratis #izenburua {
@@ -12362,6 +12375,12 @@
 
                 .flexible-25.bannerweb-enviogratis #argazkia img {
                   display: none;
+                }
+
+                .flexible-25.bannerweb-enviogratis p#letratxikia {
+                  /* text-align: center; */
+                  /* font-size: 13px; */
+                  padding: 0 5%;
                 }
 
                 /* .flexible-25.bannerweb-enviogratis p#letratxikia {
@@ -12380,7 +12399,7 @@
                 }
 
                 .extend33 .flexible-25.bannerweb-enviogratis #argazkia {
-                  right: 15px;
+                  /* right: 15px; */
                   width: 40%;
                 }
 
@@ -12390,9 +12409,13 @@
                 }
 
                 .extend33 .flexible-25.bannerweb-enviogratis #argazkia img.mobile {
-                  display: block;
-                  width: 86%;
-                  float: right;
+                  display: flex;
+                  /* width: 86%;
+                  float: right; */
+                }
+
+                .extend33 .flexible-25.bannerweb-enviogratis p#letratxikia {
+                  letter-spacing: inherit;
                 }
 
                 /* .extend33 .flexible-25.bannerweb-enviogratis p#letratxikia {
@@ -12413,12 +12436,12 @@
 
                 .extend50 .flexible-25.bannerweb-enviogratis #argazkia {
                   width: 50%;
-                  bottom: 20px;
-                  right: 10px;
+                  /* bottom: 20px;
+                  right: 10px; */
                 }
 
                 .extend50 .flexible-25.bannerweb-enviogratis #argazkia img.tablet {
-                  width: 110%;
+                  /* width: 110%; */
 
                 }
 
@@ -12428,7 +12451,7 @@
                 }
 
                 .extend50 .flexible-25.bannerweb-enviogratis p#letratxikia {
-                  padding: 0 15% 0 0;
+                  padding: 0 0% 0 0;
                   margin-top: 5px;
                 }
 
@@ -12444,7 +12467,7 @@
                 /* Bit-this asmatutakoa */
 
                 .flexible-25.bannerweb-enviogratis #edukia {
-                  padding: 20px 8% 20px 8%;
+                  padding: 20px 10% 20px 10%;
                 }
 
                 .flexible-25.bannerweb-enviogratis #izenburua {
@@ -12476,8 +12499,9 @@
 
                 .extend33 .flexible-25.bannerweb-enviogratis p#letratxikia {
                   text-align: center;
-                  font-size: 13px;
-                  padding: 0 5% 0 5%;
+                  /* font-size: 13px; */
+                  letter-spacing: inherit;
+                  padding: 0 3% 0 3%;
                 }
 
                 .extend33 .flexible-25.bannerweb-enviogratis #izenburua {
@@ -12506,16 +12530,18 @@
 
                 .extend50 .flexible-25.bannerweb-enviogratis #argazkia {
                   width: 45%;
+                  padding: 0 2%;
                 }
 
                 .extend50 .flexible-25.bannerweb-enviogratis #argazkia img.mobile {
-                  width: 86%;
+                  /* width: 86%; */
                   display: block;
                 }
 
                 .extend50 .flexible-25.bannerweb-enviogratis p#letratxikia {
                   /* padding: 5px 0 10px 0; */
                   margin-top: 5px;
+                  font-size: 12px;
                 }
 
                 .extend50 .flexible-25.bannerweb-enviogratis p#botoia {
@@ -12530,6 +12556,11 @@
    }*/
 
               @media only screen and (max-width: 720px) {
+
+                .flexible-25.bannerweb-enviogratis {
+                  display: flex !important;
+                }
+
                 .flexible-25.bannerweb-enviogratis #edukia {
                   width: 50% !important;
                   text-align: left !important;
@@ -12543,9 +12574,9 @@
                   line-height: 100% !important;
                 }
 
-                /* .flexible-25.bannerweb-enviogratis #izenburua br {
-                  display: none;
-                } */
+                .flexible-25.bannerweb-enviogratis #izenburua br {
+                  display: block !important;
+                }
 
                 /* .flexible-25.bannerweb-enviogratis #izenburua span {
                   font-size: 42px !important;
@@ -12557,21 +12588,23 @@
                 }
 
                 .flexible-25.bannerweb-enviogratis #argazkia img.tablet {
-                  display: block !important;
-                  width: 260px !important;
+                  display: flex !important;
+                  /* width: 100%; */
+                  height: 90% !important;
+                  width: auto !important;
                 }
 
                 .flexible-25.bannerweb-enviogratis #argazkia {
-                  right: 5% !important;
-                  bottom: 10px !important;
-                  display: block;
+                  display: flex;
+                  width: 50% !important;
                 }
 
                 .flexible-25.bannerweb-enviogratis p#letratxikia {
                   text-align: left;
                   font-size: 14px !important;
-                  padding: 0 5% 10px 0 !important;
-                  margin: 10px 0 0 0 !important;
+                  padding: 0 10% 10px 0 !important;
+                  margin: 7px 0 0 0 !important;
+                  letter-spacing: inherit !important;
                   /* padding: 0; */
                 }
 
@@ -12595,12 +12628,15 @@
                 }
 
                 .flexible-25.bannerweb-enviogratis #argazkia {
-                  bottom: 15px !important;
+                  /* bottom: 15px !important; */
+                  width: 45% !important;
                 }
 
                 .flexible-25.bannerweb-enviogratis #argazkia img.mobile {
-                  display: block !important;
-                  width: 160px !important;
+                  display: flex !important;
+                  height: 90% !important;
+                  width: auto !important;
+                  /* width: 160px !important; */
                 }
 
                 .flexible-25.bannerweb-enviogratis #argazkia img.tablet {
@@ -12623,12 +12659,17 @@
 
               }
 
-              @media only screen and (max-width: 360px) {
+              @media only screen and (max-width: 400px) {
                 /* Kasu honetarako bakarrik */
 
                 .flexible-25.bannerweb-enviogratis {
                   height: auto;
-                  padding-bottom: 20px;
+                  /* padding-bottom: 20px; */
+                }
+
+                .flexible-25.bannerweb-enviogratis #edukia {
+                  padding-bottom: 20px !important;
+                  padding-top: 20px !important;
                 }
 
                 /* .extend33 .flexible-25.bannerweb-enviogratis,
@@ -12637,21 +12678,22 @@
                 } */
 
 
-                .flexible-25.bannerweb-enviogratis #izenburua span {}
+                /* .flexible-25.bannerweb-enviogratis #izenburua span {} */
 
                 .flexible-25.bannerweb-enviogratis p#letratxikia {
                   font-size: 13px !important;
                 }
 
                 .flexible-25.bannerweb-enviogratis #argazkia {
-                  right: 2% !important;
-                  width: 45%;
+                  /* right: 2% !important; */
+                  width: 45% !important;
                   /* bottom: 15px !important;
       display: block; */
                 }
 
                 .flexible-25.bannerweb-enviogratis #argazkia img.mobile {
-                  width: 92% !important;
+                  width: 90% !important;
+                  height: auto !important;
                 }
 
                 .flexible-25.bannerweb-enviogratis p#botoia {
@@ -12669,7 +12711,7 @@
                 Envío<br> Gratis
               </p>
               <p id="letratxikia" class="fina">
-                Hasta el 25/02 por la compra de 20€ en productos <strong>Reckitt</strong>
+                Hasta el 25/02 por la compra de 20€ en <strong>Air Wick, Colón, Flor</strong>
               </p>
               <p id="botoia" class="fina ertaina larriz">
                 <a href="https://supermercado.eroski.es/es/supermercado/gastosreckitt/">
@@ -12680,9 +12722,9 @@
             </div>
 
             <div id="argazkia">
-              <img src="ero_banner/img/bannerweb-enviogratis-reckitt-202602-1.webp" class="tablet"
+              <img src="ero_banner/img/bannerweb-enviogratis-reckitt-202602q2-1.webp" class="tablet"
                 alt="Productos Reckitt" loading="lazy">
-              <img src="ero_banner/img/bannerweb-enviogratis-reckitt-202602-2.webp" class="mobile"
+              <img src="ero_banner/img/bannerweb-enviogratis-reckitt-202602q2-2.webp" class="mobile"
                 alt="Productos Reckitt" loading="lazy">
             </div>
 
@@ -12706,7 +12748,7 @@
                 Envío<br> Gratis
               </p>
               <p id="letratxikia" class="fina">
-                Hasta el 25/02 por la compra de 20€ en productos <strong>Reckitt</strong>
+                Hasta el 25/02 por la compra de 20€ en <strong>Air Wick, Colón, Flor</strong>
               </p>
               <p id="botoia" class="fina ertaina larriz">
                 <a href="https://supermercado.eroski.es/es/supermercado/gastosreckitt/">
@@ -12717,9 +12759,9 @@
             </div>
 
             <div id="argazkia">
-              <img src="ero_banner/img/bannerweb-enviogratis-reckitt-202602-1.webp" class="tablet"
+              <img src="ero_banner/img/bannerweb-enviogratis-reckitt-202602q2-1.webp" class="tablet"
                 alt="Productos Reckitt" loading="lazy">
-              <img src="ero_banner/img/bannerweb-enviogratis-reckitt-202602-2.webp" class="mobile"
+              <img src="ero_banner/img/bannerweb-enviogratis-reckitt-202602q2-2.webp" class="mobile"
                 alt="Productos Reckitt" loading="lazy">
             </div>
 
@@ -12743,7 +12785,7 @@
                 Envío<br /> Gratis
               </p>
               <p id="letratxikia" class="fina">
-                Hasta el 25/02 por la compra de 20€ en productos <strong>Reckitt</strong>
+                Hasta el 25/02 por la compra de 20€ en <strong>Air Wick, Colón, Flor</strong>
               </p>
               <p id="botoia" class="fina ertaina larriz">
                 <a href="https://supermercado.eroski.es/es/supermercado/gastosreckitt/">
@@ -12754,9 +12796,9 @@
             </div>
 
             <div id="argazkia">
-              <img src="ero_banner/img/bannerweb-enviogratis-reckitt-202602-1.webp" class="tablet"
+              <img src="ero_banner/img/bannerweb-enviogratis-reckitt-202602q2-1.webp" class="tablet"
                 alt="Productos Reckitt" loading="lazy">
-              <img src="ero_banner/img/bannerweb-enviogratis-reckitt-202602-2.webp" class="mobile"
+              <img src="ero_banner/img/bannerweb-enviogratis-reckitt-202602q2-2.webp" class="mobile"
                 alt="Productos Reckitt" loading="lazy">
             </div>
 
