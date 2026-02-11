@@ -49,3 +49,7 @@ services:
     App\Command\TinifyImagesCommand:
         arguments:
             $projectDir: '%kernel.project_dir%'
+
+    App\Command\CommentBordersCommand:
+        arguments:
+            $projectDir: '%kernel.project_dir%'

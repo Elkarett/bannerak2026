@@ -68,12 +68,13 @@ class ExtractBannerCommand extends Command
 
         // 2. Get files in selected directory
         $finderFiles = new Finder();
-        $finderFiles->files()->in($workingDir)->name('*.html')->depth(0);
+        $finderFiles->files()->in($workingDir)->name('*.html');
 
         $files = [];
         foreach ($finderFiles as $file) {
-            $files[] = $file->getFilename();
+            $files[] = $file->getRelativePathname();
         }
+        sort($files);
 
         if (empty($files)) {
             $io->error("No HTML files found in $workingDir");
