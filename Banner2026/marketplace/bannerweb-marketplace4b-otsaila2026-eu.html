@@ -12082,10 +12082,57 @@
 
               .flexible-50.bannerweb-marketplace50-otsaila2026.premio #burua {
                 padding: 10px 8% 0px 8%;
+                /* text-align: left; */
+              }
+
+              .flexible-50.bannerweb-marketplace50-otsaila2026.premio #burua .sello-container {
+                position: absolute;
+                top: 25px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 200px;
+                height: auto;
+                opacity: 0;
+                animation: cycleSeal 8s infinite;
               }
 
               .flexible-50.bannerweb-marketplace50-otsaila2026.premio #burua p {
                 font-size: 23px;
+                animation: cycleText 8s infinite;
+              }
+
+              @keyframes cycleText {
+
+                0%,
+                45% {
+                  opacity: 1;
+                }
+
+                50%,
+                95% {
+                  opacity: 0;
+                }
+
+                100% {
+                  opacity: 1;
+                }
+              }
+
+              @keyframes cycleSeal {
+
+                0%,
+                45% {
+                  opacity: 0;
+                }
+
+                50%,
+                95% {
+                  opacity: 1;
+                }
+
+                100% {
+                  opacity: 0;
+                }
               }
 
               .flexible-50.bannerweb-marketplace50-otsaila2026.premio #burua p span.texto {
@@ -12097,11 +12144,11 @@
                 /* background-image: url('ero_banner/img/bannerweb-marketplace-labelbg.webp');
                 background-size: 100% 100%;
                 background-repeat: no-repeat; */
-                /* display: block; */
-                width: 60%;
+                display: inline-block;
+                width: auto;
                 /* margin: auto; */
                 /* font-size: 32px; */
-                /* padding: 10px 10px 7px 10px; */
+                padding: 10px 15px 7px 15px;
               }
 
               .flexible-50.bannerweb-marketplace50-otsaila2026.premio #edukia {
@@ -12163,17 +12210,24 @@
 
               @media only screen and (max-width:1350px) {
 
-                .flexible-50.bannerweb-marketplace50-otsaila2026.premio #burua p .bg-svg-label {
+                /* .flexible-50.bannerweb-marketplace50-otsaila2026.premio #burua .sello-container {
+                  width: 120px !important;
+                  left: 50% !important;
+                  transform: translateX(-50%) !important;
+                  top: 10px;
+                } */
+
+                /* .flexible-50.bannerweb-marketplace50-otsaila2026.premio #burua p .bg-svg-label {
                   width: 65%;
-                }
+                } */
 
                 .flexible-50.bannerweb-marketplace50-otsaila2026.premio #burua {
                   padding: 10px 5% 0 5%;
                 }
 
-                .flexible-50.bannerweb-marketplace50-otsaila2026.premio #burua p {
+                /* .flexible-50.bannerweb-marketplace50-otsaila2026.premio #burua p {
                   font-size: 30px;
-                }
+                } */
 
                 /* .flexible-50.bannerweb-marketplace50-otsaila2026 #burua p .bg-svg-label {
                   font-size: 20px;
@@ -12253,7 +12307,7 @@
                 .flexible-50.bannerweb-marketplace50-otsaila2026.premio #burua p .bg-svg-label {
                   /* font-size: 18px;
                   padding: 10px 10px 7px 10px; */
-                  width: 75%;
+                  /* width: 75%; */
                 }
 
                 .flexible-50.bannerweb-marketplace50-otsaila2026.premio #letratxikia {
@@ -12310,6 +12364,16 @@
                   padding: 10px 1% 0 1% !important;
                 } */
 
+                .flexible-50.bannerweb-marketplace50-otsaila2026.premio #burua .sello-container {
+                  top: 20px;
+                  /* left: 50%; */
+                  /* transform: translateX(-50%);
+                width: 200px;
+                height: auto;
+                opacity: 0;
+                animation: cycleSeal 8s infinite; */
+                }
+
                 .flexible-50.bannerweb-marketplace50-otsaila2026.premio #burua p {
                   font-size: 20px;
                   line-height: 145%;
@@ -12322,7 +12386,7 @@
                 .flexible-50.bannerweb-marketplace50-otsaila2026.premio #burua p .bg-svg-label {
                   /* font-size: 18px; */
                   font-size: 24px;
-                  width: 100% !important;
+                  /* width: 100% !important; */
                   /* padding: 10px 10px 7px 10px; */
                 }
 
@@ -12374,6 +12438,7 @@
 
               @media only screen and (max-width:720px) {
 
+
                 .flexible-50.bannerweb-marketplace50-otsaila2026.premio #edukia {
                   margin-top: -10px;
                 }
@@ -12406,9 +12471,24 @@
                   margin-top: 5px;
                 }
 
+                .flexible-50.bannerweb-marketplace50-otsaila2026.premio #burua .sello-container {
+                  top: 25px;
+                  /* left: 50%; */
+                  /* transform: translateX(-50%);
+                width: 200px;
+                height: auto;
+                opacity: 0;
+                animation: cycleSeal 8s infinite; */
+                }
               }
 
               @media only screen and (max-width:550px) {
+
+
+                .flexible-50.bannerweb-marketplace50-otsaila2026.premio #burua .sello-container {
+                  top: 30% !important;
+                  transform: translate(-50%, -50%) !important;
+                }
 
                 /* .flexible-50.bannerweb-marketplace50-otsaila2026 {
                   height: auto;
@@ -12460,6 +12540,31 @@
                 <span class="bg-svg-label">oparitzen
                   dizkizugu</span>
               </p>
+              <div class="sello-container">
+                <svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Star Group - Scaled down -->
+                  <g transform="translate(32, 5) scale(0.8)">
+                    <polygon points="15,0 19,10 30,10 21,17 24,28 15,22 6,28 9,17 0,10 11,10" fill="#f4c150" />
+                    <polygon points="15,0 19,10 30,10 21,17 24,28 15,22 6,28 9,17 0,10 11,10" fill="#f4c150"
+                      transform="translate(35,0)" />
+                    <polygon points="15,0 19,10 30,10 21,17 24,28 15,22 6,28 9,17 0,10 11,10" fill="#f4c150"
+                      transform="translate(70,0)" />
+                    <polygon points="15,0 19,10 30,10 21,17 24,28 15,22 6,28 9,17 0,10 11,10" fill="#f4c150"
+                      transform="translate(105,0)" />
+                    <polygon points="15,0 19,10 30,10 21,17 24,28 15,22 6,28 9,17 0,10 11,10" fill="#f4c150"
+                      transform="translate(140,0)" />
+                  </g>
+
+                  <!-- Line -->
+                  <line x1="15" y1="37" x2="185" y2="37" stroke="#fff" stroke-width="1" />
+
+                  <!-- Text -->
+                  <text x="100" y="59" text-anchor="middle" font-family="Arial, sans-serif" font-size="12"
+                    font-weight="normal" fill="#fff">70.000 PRODUKTU BAINO GEHIAGO</text>
+                  <text x="100" y="77" text-anchor="middle" font-family="Arial, sans-serif" font-size="12"
+                    font-weight="normal" fill="#fff">5 IZARREKO SALTZAILEENAK</text>
+                </svg>
+              </div>
             </div>
 
             <div id="edukia">
